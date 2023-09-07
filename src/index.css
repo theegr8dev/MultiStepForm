@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+/* Utilities */
+button {
+	border: 1px solid transparent;
+	background: transparent;
+	cursor: pointer;
+}
+li {
+	list-style: none;
+}
+.btn {
+	width: 12rem;
+	height: 4rem;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-block-start: 15rem;
+	margin-block-end: 1rem;
+	margin-inline-start: auto;
+}
+.next--btn {
+	background-color: hsl(213, 96%, 18%);
+	color: hsl(231, 100%, 99%);
+}
+/* Utilities ENDED */
+main {
+	background-color: hsl(217, 100%, 97%);
+	height: 100vh;
+}
+.container {
+	width: 90rem;
+	margin: 0 auto;
+	background-color: hsl(231, 100%, 99%);
+	display: flex;
+	gap: 10rem;
+	padding: 2rem;
+}
+/* Side bar */
+.step {
+	background: url('./assets/images/bg-sidebar-desktop.svg') no-repeat;
+	background-size: cover;
+	width: 25rem;
+	padding: 3rem;
+	padding-block-end: 30rem;
+}
+.step__list {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+.step__item {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+.step__btn {
+	border: 1px solid hsl(0, 0%, 100%);
+	font-size: 1.6rem;
+	font-weight: bolder;
+	color: hsl(0, 0%, 100%);
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+.step__item span {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: hsl(229, 24%, 87%);
+}
+.step__item p {
+	font-size: 1.6rem;
+	color: hsl(231, 100%, 99%);
+	font-weight: bold;
+}
+/* Header */
+.header {
+	margin-block-end: 3.5rem;
+}
+.header h1 {
+	font-size: 3rem;
+	color: hsl(213, 96%, 18%);
+}
+.header p {
+	font-size: 1.5rem;
+	color: hsl(231, 11%, 63%);
+	margin-block-start: 1rem;
+}
+/* Personal Info */
+.step--content {
+	margin-block-start: 5rem;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+.form-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+}
+.form--label {
+	font-size: 1.5rem;
+	color: hsl(213, 96%, 18%);
+}
+.form--input {
+	outline: 1px solid transparent;
+	border: 1px solid hsl(229, 24%, 87%);
+	border-radius: 10px;
+	background-color: hsl(231, 100%, 99%);
+	padding: 1rem;
+	font-size: 1.5rem;
+	color: hsl(231, 11%, 63%);
+}
+::placeholder {
+	color: hsl(231, 11%, 63%);
 }
