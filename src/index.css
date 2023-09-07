@@ -20,15 +20,17 @@ button {
 li {
 	list-style: none;
 }
+.btns {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-block-start: 15rem;
+	margin-block-end: 1rem;
+}
 .btn {
 	width: 12rem;
 	height: 4rem;
 	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-block-start: 15rem;
-	margin-block-end: 1rem;
 	margin-inline-start: auto;
 }
 .next--btn {
@@ -98,10 +100,11 @@ main {
 	color: hsl(231, 11%, 63%);
 	margin-block-start: 1rem;
 }
-/* Personal Info */
 .step--content {
 	margin-block-start: 5rem;
 }
+/* Personal Info */
+
 .form {
 	display: flex;
 	flex-direction: column;
@@ -127,4 +130,105 @@ main {
 }
 ::placeholder {
 	color: hsl(231, 11%, 63%);
+}
+/* Plan */
+.plan-container {
+	width: 50rem;
+}
+.plans {
+	display: flex;
+	justify-content: space-between;
+	margin-block-end: 3rem;
+}
+.plan-card {
+	border: 1px solid hsl(229, 24%, 87%);
+	border-radius: 10px;
+	width: 15rem;
+	padding: 2rem 1rem;
+	cursor: pointer;
+}
+.plan-img {
+	width: 5rem;
+	margin-block-end: 5rem;
+}
+.plan-img img {
+	width: 100%;
+}
+.plan-card p {
+	color: hsl(213, 96%, 18%);
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+.plan-card span {
+	display: inline-block;
+	margin-block-start: 0.5rem;
+	font-size: 1.3rem;
+	color: hsl(231, 11%, 63%);
+}
+.period {
+	width: 100%;
+	background-color: hsl(229, 24%, 87%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	font-size: 1.6rem;
+	font-weight: bolder;
+	padding-block: 1rem;
+	border-radius: 10px;
+}
+
+/* Toggle sWITCH */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 4rem;
+	height: 2rem;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	/* background-color: hsl(213, 96%, 18%); */
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: '';
+	height: 1.5rem;
+	width: 1.5rem;
+	left: 4px;
+	bottom: 3px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: hsl(213, 96%, 18%);
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px hsl(213, 96%, 18%);
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(18px);
+	-ms-transform: translateX(18px);
+	transform: translateX(18px);
 }

@@ -3,7 +3,7 @@ import Header from './Header';
 
 function PersonalInfo() {
 	return (
-		<div className=" step--content info">
+		<div className="step--content info">
 			<Header>
 				<h1>Personal info</h1>
 				<p>Please provide your name, email address, and phone number.</p>
@@ -46,7 +46,9 @@ function PersonalInfo() {
 					/>
 				</div>
 			</form>
-			<Button className="btn next--btn">Next Step</Button>
+			<div className="btns">
+				<Button className="btn next--btn">Next Step</Button>
+			</div>
 		</div>
 	);
 }

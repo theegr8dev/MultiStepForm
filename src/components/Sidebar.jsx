@@ -12,21 +12,21 @@ function Sidebar() {
 					</div>
 				</li>
 				<li className="step__item">
-					<Button className="step__btn">1</Button>
+					<Button className="step__btn">2</Button>
 					<div className="step__info">
 						<span> STEP 2</span>
 						<p>SELECT PLAN</p>
 					</div>
 				</li>
 				<li className="step__item">
-					<Button className="step__btn">1</Button>
+					<Button className="step__btn">3</Button>
 					<div className="step__info">
 						<span> STEP 3</span>
 						<p>ADD-ONS</p>
 					</div>
 				</li>
 				<li className="step__item">
-					<Button className="step__btn">1</Button>
+					<Button className="step__btn">4</Button>
 					<div className="step__info">
 						<span> STEP 4</span>
 						<p>SUMMARY</p>
