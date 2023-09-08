@@ -1,9 +1,11 @@
 import Button from './Button';
 import Header from './Header';
+import ToggleSwitch from './ToggleSwitch';
 import arcade from '../assets/images/icon-arcade.svg';
 import advance from '../assets/images/icon-advanced.svg';
 import pro from '../assets/images/icon-pro.svg';
-import ToggleSwitch from './ToggleSwitch';
+import '../css/ToggleSwitch.css';
+
 function Plan() {
 	return (
 		<div className="step--content plan-container">
