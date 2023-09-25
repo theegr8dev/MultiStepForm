@@ -20,6 +20,14 @@ button {
 li {
 	list-style: none;
 }
+a {
+	text-decoration: none;
+}
+.active .step__btn {
+	background-color: hsl(206, 94%, 87%);
+	color: hsl(213, 96%, 18%);
+	border: 1px solid transparent;
+}
 .btns {
 	width: 100%;
 	display: flex;
@@ -41,6 +49,16 @@ li {
 .confirm--btn {
 	background-color: hsl(243, 100%, 62%);
 	color: hsl(231, 100%, 99%);
+}
+.error {
+	border: 1px solid red !important;
+}
+.error-message {
+	display: block !important;
+}
+.active-plan {
+	border: 1px solid hsl(243, 100%, 62%) !important;
+	background-color: rgba(173, 189, 255, 0.2);
 }
 /* Utilities ENDED */
 main {
@@ -123,9 +141,21 @@ main {
 	gap: 0.7rem;
 }
 .form--label {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.form--label label {
 	font-size: 1.5rem;
 	color: hsl(213, 96%, 18%);
 }
+.form--label p {
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: red;
+	display: none;
+}
+
 .form--input {
 	outline: 1px solid transparent;
 	border: 1px solid hsl(229, 24%, 87%);

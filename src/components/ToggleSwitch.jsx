@@ -1,7 +1,7 @@
-function ToggleSwitch() {
+function ToggleSwitch({ onChange }) {
 	return (
 		<label className="switch">
-			<input type="checkbox" />
+			<input type="checkbox" onChange={onChange} />
 			<span className="slider"></span>
 		</label>
 	);
